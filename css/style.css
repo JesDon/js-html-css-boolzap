@@ -1,0 +1,27 @@
+/* VALORI GENERICI */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #DBDBD2;
+  z-index: 1;
+}
+
+body .green-header{
+  background-color: #009688;
+  z-index: 2;
+  height: 140px;
+}
+
+.container{
+  height: 95vh;
+  background-color: yellow;
+  max-width: 80%;
+  margin: auto;
+  transform: translateY(20px);
+  z-index: 100;
+}
+/* /VALORI GENERICI */
