@@ -45,9 +45,9 @@ header{
 
 /* HEADER SINISTRA */
 .header-left-avatar img{
-  width: 60px;
+  width: 50px;
   border-radius: 50px;
-  padding: 10px 0 0 10px;
+  margin: 10px 0 0 10px;
   float: left;
 }
 
@@ -114,19 +114,30 @@ cursor: pointer;
 }
 
 .search i{
-  color: grey;
-  float: left;
+  display: inline-block;
+    width: calc(15% - 7px);
+    height: 36px;
+    margin: 7px 0 7px 7px;
+    border-top: 1px solid #F5F5F5;
+    border-right: 0;
+    border-bottom: 1px solid #F5F5F5;
+    border-left: 1px solid #F5F5F5;
+    background: white;
+    line-height: 36px;
+    text-align: center;
+    color: #B6B9BB;
 }
+
 .search input{
   font-family: 'Ubuntu', sans-serif;
   font-size: 13px;
-  color: grey;
-  padding-left: 60px;
-  height: 35px;
-  width: 95%;
-  margin-top: 8px;
-  border: 1px solid #EAEAEA;
-  float: right;
+  color: #B6B9BB;
+  height: 36px;
+  border-top: 1px solid #F5F5F5;
+  border-left: 0;
+  border-bottom: 1px solid #F5F5F5;
+  border-right: 1px solid #F5F5F5;
+  width: 85%;
 }
 /* /SEARCH */
 
@@ -134,7 +145,52 @@ cursor: pointer;
 .contacts{
   background-color: white;
   height: calc(100% - 200px);
+  overflow-y: scroll;
 }
+
+.contacts-box{
+  height: 80px;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.contacts-box:hover{
+  background-color: #E9EBEB;
+  cursor: pointer;
+}
+
+.contacts img{
+  width: 60px;
+  border-radius: 40px;
+  margin: 10px 0 0 20px;
+  float: left;
+  margin-right: 20px;
+}
+
+.contacts-text{
+  padding: 20px 0 0 20px;
+}
+
+.contacts-text h4{
+font-size: 16px;
+padding-bottom: 7px;
+}
+
+.contacts-text p{
+font-size: 13px;
+color: #B6B9BB;
+}
+
+.time{
+  text-align: right;
+  padding-right: 10px;
+  margin-top: -40px;
+}
+
+.time p{
+font-size: 13px;
+color: #B6B9BB;
+}
+
 /* /CONTATTI */
 /* BLOCCO CONTATTI */
 
