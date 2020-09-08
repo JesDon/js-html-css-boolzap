@@ -8,6 +8,7 @@
 body{
   background-color: #DBDBD2;
   z-index: 1;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 body .green-header{
@@ -42,6 +43,7 @@ header{
   border-right: 1px solid lightgrey;
 }
 
+/* HEADER SINISTRA */
 .header-left-avatar img{
   width: 60px;
   border-radius: 50px;
@@ -64,12 +66,44 @@ header{
   color: #B1B1B1;
   cursor: pointer;
 }
+/* /HEADER SINISTRA */
 
+/* NOTIFICATIONS */
 .notifications{
   background-color: #8EDAFC;
   height: 80px;
+  padding-top: 18px;
 }
 
+.bell{
+  padding: 0 12px 0 20px;
+  float: left;
+}
+
+.bell i{
+  background-color: white;
+  color: #8EDAFC;
+  font-size: 20px;
+  padding: 13px;
+  border-radius: 50px;
+}
+
+.notifications-text{
+  padding-top: 5px;
+}
+
+.notifications-text h4{
+font-size: 15px;
+padding-bottom: 3px;
+}
+
+.notifications-text p{
+font-size: 13px;
+color: grey;
+text-decoration: underline;
+cursor: pointer;
+}
+/* /NOTIFICATIONS */
 .search{
   background-color: #EAEAEA;
   height: 50px;
