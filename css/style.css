@@ -239,6 +239,37 @@ color: grey;
   height: calc(100% - 140px);
   background-image: url(../img/mine.jpg);
   background-size: auto;
+  overflow-y: scroll;
+}
+
+.sent-message{
+  float: right;
+  margin-right: 100px;
+}
+
+.received-message{
+  float: left;
+  margin-left: 100px;
+}
+
+.chat .sent-message{
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #D5F9BA;
+  padding: 18px;
+  border-radius: 10px;
+  width: 150px;
+  margin-top: 50px;
+}
+
+.chat .received-message{
+  font-size: 14px;
+  font-weight: bold;
+  background-color: white;
+  padding: 18px;
+  border-radius: 10px;
+  width: 150px;
+  margin-top: 150px;
 }
 /* /CHAT APERTA */
 
@@ -267,4 +298,5 @@ color: grey;
   width: 80%;
   padding-left: 20px;
 }
+/* /NUOVO MESSAGGIO */
 /* /BLOCCO DESTRA */
