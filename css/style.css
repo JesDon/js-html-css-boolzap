@@ -104,16 +104,38 @@ text-decoration: underline;
 cursor: pointer;
 }
 /* /NOTIFICATIONS */
+
+/* SEARCH */
 .search{
-  background-color: #EAEAEA;
+  background-color: #FAFAFA;
   height: 50px;
+  text-align: center;
+  line-height: 50px;
 }
 
+.search i{
+  color: grey;
+  float: left;
+}
+.search input{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 13px;
+  color: grey;
+  padding-left: 60px;
+  height: 35px;
+  width: 95%;
+  margin-top: 8px;
+  border: 1px solid #EAEAEA;
+  float: right;
+}
+/* /SEARCH */
+
+/* CONTATTI */
 .contacts{
   background-color: white;
   height: calc(100% - 200px);
 }
-
+/* /CONTATTI */
 /* BLOCCO CONTATTI */
 
 /* BLOCCO /CHAT */
