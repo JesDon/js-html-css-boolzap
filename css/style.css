@@ -30,6 +30,7 @@ body .green-header{
 header{
   background-color: #EAEAEA;
   height: 70px;
+  line-height: 70px;
 }
 /* /VALORI GENERICI */
 
@@ -45,7 +46,25 @@ header{
   width: 60px;
   border-radius: 50px;
   padding: 10px 0 0 10px;
+  float: left;
 }
+
+.header-left ul{
+  list-style: none;
+  float: right;
+}
+
+.header-left li{
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.header-left .icons{
+  font-size: 21px;
+  color: #B1B1B1;
+  cursor: pointer;
+}
+
 .notifications{
   background-color: #8EDAFC;
   height: 80px;
@@ -65,7 +84,6 @@ header{
 
 /* BLOCCO /CHAT */
 .main-right{
-  background-color: lightgreen;
   height: 100%;
   width: 65%;
   float: right;
