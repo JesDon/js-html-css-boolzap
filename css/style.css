@@ -27,15 +27,28 @@ body .green-header{
   margin-top: -135px;
 }
 
-
 header{
   background-color: #EAEAEA;
   height: 70px;
-  line-height: 70px;
+}
+
+.container ul{
+  list-style: none;
+}
+
+.container li{
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.container .icons{
+  font-size: 21px;
+  color: #B1B1B1;
+  cursor: pointer;
 }
 /* /VALORI GENERICI */
 
-/* BLOCCO CONTATTI */
+/* BLOCCO SINISTRA */
 .main-left{
   width: 35%;
   height: 100%;
@@ -52,20 +65,10 @@ header{
 }
 
 .header-left ul{
-  list-style: none;
   float: right;
+  padding-top: 22px;
 }
 
-.header-left li{
-  display: inline-block;
-  padding-right: 20px;
-}
-
-.header-left .icons{
-  font-size: 21px;
-  color: #B1B1B1;
-  cursor: pointer;
-}
 /* /HEADER SINISTRA */
 
 /* NOTIFICATIONS */
@@ -192,9 +195,9 @@ color: #B6B9BB;
 }
 
 /* /CONTATTI */
-/* BLOCCO CONTATTI */
+/* /BLOCCO SINISTRA */
 
-/* BLOCCO /CHAT */
+/* BLOCCO DESTRA */
 .main-right{
   height: 100%;
   width: 65%;
@@ -202,14 +205,44 @@ color: #B6B9BB;
   border-right: 1px solid lightgrey;
 }
 
+/* HEADER DESTRA */
+.header-right img{
+  width: 50px;
+  border-radius: 50px;
+  margin: 10px 10px 0 10px;
+  float: left;
+}
+
+.header-right-text{
+  padding: 20px 0 0 5px;
+  float: left;
+}
+
+.header-right-text h4{
+  font-size: 16px;
+  padding-bottom: 4px;
+}
+
+.header-right-text p{
+font-size: 13px;
+color: grey;
+}
+
+.header-right ul{
+  float: right;
+}
+/* /HEADER DESTRA */
+
+/* CHAT APERTA */
 .chat{
   height: calc(100% - 140px);
   background-image: url(../img/mine.jpg);
   background-size: auto;
 }
+/* /CHAT APERTA */
 
 .new-message{
   height: 70px;
   background-color: #EAEAEA;
 }
-/* BLOCCO /CHAT */
+/* /BLOCCO DESTRA */
