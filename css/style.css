@@ -25,14 +25,42 @@ body .green-header{
   z-index: 100;
   margin-top: -135px;
 }
+
+
+header{
+  background-color: #EAEAEA;
+  height: 70px;
+}
 /* /VALORI GENERICI */
 
 /* BLOCCO CONTATTI */
 .main-left{
-  background-color: pink;
   width: 35%;
   height: 100%;
+  float: left;
+  border-right: 1px solid lightgrey;
 }
+
+.header-left-avatar img{
+  width: 60px;
+  border-radius: 50px;
+  padding: 10px 0 0 10px;
+}
+.notifications{
+  background-color: #8EDAFC;
+  height: 80px;
+}
+
+.search{
+  background-color: #EAEAEA;
+  height: 50px;
+}
+
+.contacts{
+  background-color: white;
+  height: calc(100% - 200px);
+}
+
 /* BLOCCO CONTATTI */
 
 /* BLOCCO /CHAT */
@@ -41,5 +69,17 @@ body .green-header{
   height: 100%;
   width: 65%;
   float: right;
+  border-right: 1px solid lightgrey;
+}
+
+.chat{
+  height: calc(100% - 140px);
+  background-image: url(../img/mine.jpg);
+  background-size: auto;
+}
+
+.new-message{
+  height: 70px;
+  background-color: #EAEAEA;
 }
 /* BLOCCO /CHAT */
