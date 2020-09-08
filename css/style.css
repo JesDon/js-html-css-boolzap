@@ -14,14 +14,32 @@ body .green-header{
   background-color: #009688;
   z-index: 2;
   height: 140px;
+  display: block;
 }
 
 .container{
   height: 95vh;
-  background-color: yellow;
   max-width: 80%;
   margin: auto;
   transform: translateY(20px);
   z-index: 100;
+  margin-top: -135px;
 }
 /* /VALORI GENERICI */
+
+/* BLOCCO CONTATTI */
+.main-left{
+  background-color: pink;
+  width: 35%;
+  height: 100%;
+}
+/* BLOCCO CONTATTI */
+
+/* BLOCCO /CHAT */
+.main-right{
+  background-color: lightgreen;
+  height: 100%;
+  width: 65%;
+  float: right;
+}
+/* BLOCCO /CHAT */
