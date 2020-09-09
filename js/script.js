@@ -1,3 +1,4 @@
+// FUNZIONE PER INSERIRE I MIEI MESSAGGI
 $(document).ready(function() {
 
 $(".send-message").click(
@@ -33,4 +34,16 @@ function sendMessage() {
     $(".chat").append(templateMessage);
     $("#input-message").val("");
   }
+}
+// /FUNZIONE PER INSERIRE I MIEI MESSAGGI
+
+// FUNZIONE PER CERCARE CONTATTO
+$(".input-contact").keypress(
+  function() {
+    searchContact();
+  }
+);
+
+function searchContact() {
+  var inputContact = $(".input-contact").val();
 }
