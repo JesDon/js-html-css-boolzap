@@ -46,6 +46,10 @@ header{
   color: #B1B1B1;
   cursor: pointer;
 }
+
+.templates{
+  display: none;
+}
 /* /VALORI GENERICI */
 
 /* BLOCCO SINISTRA */
@@ -240,36 +244,38 @@ color: grey;
   background-image: url(../img/mine.jpg);
   background-size: auto;
   overflow-y: scroll;
+  padding: 20px 80px 0 80px;
 }
 
-.sent-message{
-  float: right;
-  margin-right: 100px;
+.message-row{
+  display: flex;
+  margin: 10px 0;
 }
 
-.received-message{
-  float: left;
-  margin-left: 100px;
-}
-
-.chat .sent-message{
-  font-size: 14px;
-  font-weight: bold;
-  background-color: #D5F9BA;
-  padding: 18px;
-  border-radius: 10px;
-  width: 150px;
-  margin-top: 50px;
-}
-
-.chat .received-message{
-  font-size: 14px;
-  font-weight: bold;
+.message{
   background-color: white;
-  padding: 18px;
+  position: relative;
+  max-width: 350px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 18px 40px 18px 18px;
   border-radius: 10px;
-  width: 150px;
-  margin-top: 150px;
+}
+
+.message-time{
+  position: absolute;
+  color: #B6B9BB;
+  font-size: 10px;
+  right: 4px;
+  bottom: 4px;
+}
+
+.message-row.sent{
+  justify-content: flex-end;
+}
+
+.message-row.sent .message{
+  background-color: #d5f9ba;
 }
 /* /CHAT APERTA */
 
@@ -286,16 +292,16 @@ color: grey;
   cursor: pointer;
 }
 
-.new-message input{
+#input-message{
   font-family: 'Ubuntu', sans-serif;
   font-size: 13px;
-  color: #B6B9BB;
+  color: grey;
   height: 50px;
   border-top: 1px solid #F5F5F5;
   border-left: 0;
   border-bottom: 1px solid #F5F5F5;
   border-right: 1px solid #F5F5F5;
-  width: 80%;
+  width: 70%;
   padding-left: 20px;
 }
 /* /NUOVO MESSAGGIO */

@@ -174,16 +174,26 @@
 
           <!-- SEZIONE CHAT -->
           <div class="chat">
-            <p class="sent-message">Ciao come stai?</p>
-            <p class="received-message">Ciao come stai?</p>
+            <div class="message-row sent">
+              <div class="message">
+                <div class="message-text">Ciao come stai?</div>
+                <div class="message-time">17:20</div>
+              </div>
+            </div>
+            <div class="message-row">
+              <div class="message">
+                <div class="message-text">Ciao come stai?</div>
+                <div class="message-time">17:20</div>
+              </div>
+            </div>
           </div>
           <!-- /SEZIONE CHAT -->
 
           <!-- SEZIONE NUOVO MESSAGGIO -->
           <div class="new-message">
             <i class="far fa-smile"></i>
-            <input type="text" placeholder="Scrivi un messaggio">
-            <i class="fas fa-microphone"></i>
+            <input id="input-message" type="text" placeholder="Scrivi un messaggio">
+            <i class="send-message fas fa-microphone"></i>
           </div>
           <!-- /SEZIONE NUOVO MESSAGGIO -->
 
@@ -193,6 +203,15 @@
       </div>
       <!-- /MAIN CENTRALE -->
 
+  <div class="templates">
+    <div class="message-row sent">
+      <div class="message">
+        <div class="message-text"></div>
+        <div class="message-time"></div>
+      </div>
+    </div>
+
+  </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
     </body>
