@@ -50,6 +50,16 @@ header{
 .templates{
   display: none;
 }
+
+.dropdown{
+  display: none;
+  position: absolute;
+  font-size: 20px;
+  color: grey;
+  bottom: 23px;
+  left: 130px;
+}
+
 /* /VALORI GENERICI */
 
 /* BLOCCO SINISTRA */
