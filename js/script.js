@@ -16,16 +16,20 @@ $("#input-message").keyup(
 
 function sendMessage() {
   var inputText = $("#input-message").val();
+
   if(inputText != "") {
     var templateMessage = $(".templates .message-row").clone();
+
     var date = new Date();
     var hours = date.getHours();
     var minutes = date.getMinutes();
     var time = hours + ":" + minutes;
+
     templateMessage.find(".message-text").text(inputText);
     templateMessage.find(".message-time").text(time);
     templateMessage.addClass("sent");
-    $(".chat").append(templateMessage);
+
+    $(".chat.active").append(templateMessage);
     $("#input-message").val("");
 // /FUNZIONE PER INSERIRE I MIEI MESSAGGI
 
@@ -36,24 +40,42 @@ function sendMessage() {
     function receivedMessage() {
       var receivedMessage = $(".templates .message-row").clone();
       receivedMessage.find(".message-text").text("OK");
+
       var date = new Date();
       var hours = date.getHours();
       var minutes = date.getMinutes();
-      var time = hours + ":" + minutes;
+      var time = hours + ":" + minutes
+
       receivedMessage.find(".message-time").text(time);
-      $(".chat").append(receivedMessage);
+      $(".chat.active").append(receivedMessage);
     }
 // FUNZIONE PER RICEVERE RISPOSTE AUTOMATICHE
 
 // FUNZIONE PER CANCELLARE MESSAGGIO
-$(".dropdown").click(
+$(document).on("click", ".dropdown",
+  function(){
+  $(this).siblings(".dropdown-menu").toggle();
+
+    $(document).on("click", "#cxl-msg",
+      function(){
+      $(this).parents(".message-row").remove();
+      }
+    );
+
+// FUNZIONE PER APRIRE CHAT DIVERSE
+$(".contacts-box").click(
   function() {
-    $(this).siblings(".dropdown-menu").toggle();
+    $(".contacts-box").removeClass(".active");
+    $(this).addClass(".active");
+
+    var dataContatto = $(this).attr("data-contatto");
+
+    $(".chat").removeClass(".active");
+    $(".chat [data-chat = " + dataContatto + " ] " ).addClass(".active");
   }
 );
-$("#cxl-msg").click(
-  function() {
-    $(this).parents(".message-row").remove();
+// /FUNZIONE PER APRIRE CHAT DIVERSE
+
   }
 );
 // /FUNZIONE PER CANCELLARE MESSAGGIO
@@ -79,6 +101,5 @@ function searchContact() {
   );
 }
 // /FUNZIONE PER CERCARE UN CONTATTO
-
 // GRAFFA FINE FUNZIONE GENERALE
 });

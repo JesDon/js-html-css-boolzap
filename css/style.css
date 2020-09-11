@@ -72,7 +72,6 @@ header{
   float: right;
   padding-top: 22px;
 }
-
 /* /HEADER SINISTRA */
 
 /* NOTIFICATIONS */
@@ -100,15 +99,15 @@ header{
 }
 
 .notifications-text h4{
-font-size: 15px;
-padding-bottom: 3px;
+  font-size: 15px;
+  padding-bottom: 3px;
 }
 
 .notifications-text p{
-font-size: 13px;
-color: grey;
-text-decoration: underline;
-cursor: pointer;
+  font-size: 13px;
+  color: grey;
+  text-decoration: underline;
+  cursor: pointer;
 }
 /* /NOTIFICATIONS */
 
@@ -122,17 +121,17 @@ cursor: pointer;
 
 .search i{
   display: inline-block;
-    width: calc(15% - 7px);
-    height: 36px;
-    margin: 7px 0 7px 7px;
-    border-top: 1px solid #F5F5F5;
-    border-right: 0;
-    border-bottom: 1px solid #F5F5F5;
-    border-left: 1px solid #F5F5F5;
-    background: white;
-    line-height: 36px;
-    text-align: center;
-    color: #B6B9BB;
+  width: calc(15% - 7px);
+  height: 36px;
+  margin: 7px 0 7px 7px;
+  border-top: 1px solid #F5F5F5;
+  border-right: 0;
+  border-bottom: 1px solid #F5F5F5;
+  border-left: 1px solid #F5F5F5;
+  background: white;
+  line-height: 36px;
+  text-align: center;
+  color: #B6B9BB;
 }
 
 .search input{
@@ -178,13 +177,13 @@ cursor: pointer;
 }
 
 .contacts-text h4{
-font-size: 16px;
-padding-bottom: 7px;
+  font-size: 16px;
+  padding-bottom: 7px;
 }
 
 .contacts-text p{
-font-size: 13px;
-color: #B6B9BB;
+  font-size: 13px;
+  color: #B6B9BB;
 }
 
 .time{
@@ -194,10 +193,9 @@ color: #B6B9BB;
 }
 
 .time p{
-font-size: 13px;
-color: #B6B9BB;
+  font-size: 13px;
+  color: #B6B9BB;
 }
-
 /* /CONTATTI */
 /* /BLOCCO SINISTRA */
 
@@ -245,6 +243,10 @@ color: grey;
   background-size: auto;
   overflow-y: scroll;
   padding: 20px 80px 0 80px;
+  display: none;
+}
+.chat.active{
+  display: block;
 }
 
 .message-row{
@@ -311,7 +313,6 @@ color: grey;
 .dropdown-menu li:hover{
   color: grey;
 }
-
 /* /DROPDOWN-MENU */
 /* /CHAT APERTA */
 
