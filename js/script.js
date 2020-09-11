@@ -29,43 +29,56 @@ function sendMessage() {
     $("#input-message").val("");
 // /FUNZIONE PER INSERIRE I MIEI MESSAGGI
 
-
-
 // FUNZIONE PER RICEVERE RISPOSTE AUTOMATICHE
     setTimeout(receivedMessage, 1000);
   }
 }
-      function receivedMessage() {
-        var receivedMessage = $(".templates .message-row").clone();
-        receivedMessage.find(".message-text").text("OK");
-        var date = new Date();
-        var hours = date.getHours();
-        var minutes = date.getMinutes();
-        var time = hours + ":" + minutes;
-        receivedMessage.find(".message-time").text(time);
-        $(".chat").append(receivedMessage);
-      }
+    function receivedMessage() {
+      var receivedMessage = $(".templates .message-row").clone();
+      receivedMessage.find(".message-text").text("OK");
+      var date = new Date();
+      var hours = date.getHours();
+      var minutes = date.getMinutes();
+      var time = hours + ":" + minutes;
+      receivedMessage.find(".message-time").text(time);
+      $(".chat").append(receivedMessage);
+    }
 // FUNZIONE PER RICEVERE RISPOSTE AUTOMATICHE
 
+// FUNZIONE PER CANCELLARE MESSAGGIO
+// $(".message").hover(
+//   function() {
+//   $(".dropdown").toggle();
+//   }
+// );
+//
+// $(".dropdown").click(
+//   function() {
+//     $(".dropdown-menu").toggle();
+//   }
+// );
 
+// /FUNZIONE PER CANCELLARE MESSAGGIO
 
 // FUNZIONE PER CERCARE UN CONTATTO
-$(".input-form").keypress(
+$(".input-form").keyup(
   function() {
     searchContact();
   }
 );
 
 function searchContact() {
-  var inputContent = $(".input-form").val();
-  var contacts = $(".contacts-text h4").text();
-
-  if (contacts.includes(inputContent)) {
-    $(".contacts-box").hide();
-  }
-  else {
-    $(".contacts-box").show();
-  }
+  var inputContent = $(".input-form").val().toLowerCase();
+    $(".contacts-box").each(function() {
+      var contacts = $(this).find(".contacts-text h4").text().toLowerCase();
+      if (contacts.includes(inputContent)) {
+        $(this).show();
+      }
+      else {
+        $(this).hide();
+      }
+    }
+  );
 }
 // /FUNZIONE PER CERCARE UN CONTATTO
 
