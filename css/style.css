@@ -50,34 +50,6 @@ header{
 .templates{
   display: none;
 }
-
-.dropdown{
-  display: none;
-  position: absolute;
-  font-size: 20px;
-  color: grey;
-  bottom: 23px;
-  left: 130px;
-}
-
-.dropdown-menu{
-  display: none;
-  position: absolute;
-  background-color: white;
-  padding: 12px 0 0 10px;
-  margin: 15px 15px 0 0 ;
-  width: 170px;
-}
-
-.dropdown-menu li{
-  font-size: 13px;
-  text-decoration: none;
-  padding-bottom: 10px;
-}
-
-.dropdown-menu li:hover{
-  background-color: #E9EBEB;
-}
 /* /VALORI GENERICI */
 
 /* BLOCCO SINISTRA */
@@ -305,6 +277,42 @@ color: grey;
 .message-row.sent .message{
   background-color: #d5f9ba;
 }
+
+/* DROPDOWN-MENU */
+.dropdown{
+  display: none;
+  position: absolute;
+  font-size: 20px;
+  color: grey;
+  top: 10%;
+  left: 80%;
+}
+
+.message:hover .dropdown{
+  display: block;
+}
+
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 12px 0 0 10px;
+  margin-top: 15px;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.dropdown-menu li{
+  font-size: 12px;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+.dropdown-menu li:hover{
+  color: grey;
+}
+
+/* /DROPDOWN-MENU */
 /* /CHAT APERTA */
 
 /* NUOVO MESSAGGIO */

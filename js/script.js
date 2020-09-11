@@ -46,18 +46,16 @@ function sendMessage() {
 // FUNZIONE PER RICEVERE RISPOSTE AUTOMATICHE
 
 // FUNZIONE PER CANCELLARE MESSAGGIO
-// $(".message").hover(
-//   function() {
-//   $(".dropdown").toggle();
-//   }
-// );
-//
-// $(".dropdown").click(
-//   function() {
-//     $(".dropdown-menu").toggle();
-//   }
-// );
-
+$(".dropdown").click(
+  function() {
+    $(this).siblings(".dropdown-menu").toggle();
+  }
+);
+$("#cxl-msg").click(
+  function() {
+    $(this).parents(".message-row").remove();
+  }
+);
 // /FUNZIONE PER CANCELLARE MESSAGGIO
 
 // FUNZIONE PER CERCARE UN CONTATTO
