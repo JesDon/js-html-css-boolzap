@@ -61,24 +61,23 @@ $(document).on("click", ".dropdown",
       $(this).parents(".message-row").remove();
       }
     );
-
-// FUNZIONE PER APRIRE CHAT DIVERSE
-$(".contacts-box").click(
-  function() {
-    $(".contacts-box").removeClass(".active");
-    $(this).addClass(".active");
-
-    var dataContatto = $(this).attr("data-contatto");
-
-    $(".chat").removeClass(".active");
-    $(".chat [data-chat = " + dataContatto + " ] " ).addClass(".active");
-  }
-);
-// /FUNZIONE PER APRIRE CHAT DIVERSE
-
   }
 );
 // /FUNZIONE PER CANCELLARE MESSAGGIO
+
+// FUNZIONE PER APRIRE CHAT DIVERSE
+ $(".contacts-box").click(
+  function() {
+    $(".contacts-box").removeClass("active");
+    $(this).addClass("active");
+
+    var dataContatto = $(this).attr("data-contatto");
+
+    $(".chat").removeClass("active");
+    $(".chat[data-chat=" + dataContatto + "]").addClass("active");
+  }
+);
+// /FUNZIONE PER APRIRE CHAT DIVERSE
 
 // FUNZIONE PER CERCARE UN CONTATTO
 $(".input-form").keyup(
@@ -101,5 +100,4 @@ function searchContact() {
   );
 }
 // /FUNZIONE PER CERCARE UN CONTATTO
-// GRAFFA FINE FUNZIONE GENERALE
 });
